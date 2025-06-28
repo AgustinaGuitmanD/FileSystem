@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 @Repository
-public class ArchivoRepository {
+public class ArchivoRepository implements IArchivoRepository{
     private List<Archivo> archivos;
     public void save(String name, Directorio ubicacion) {
         // TODO
